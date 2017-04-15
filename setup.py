@@ -26,7 +26,7 @@ setup(
     name='cloudwatch_logging',
     version=get_version(),
     description='Cloudwatch logging for Django',
-    long_description=open('README.rst').read(),
+    long_description=open('README.md').read(),
     author='Hrishabh Gupta',
     url='https://github.com/hrishabhg/cloudwatch_logging',
     scripts=[],
