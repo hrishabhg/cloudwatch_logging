@@ -13,12 +13,12 @@ VERSION_RE = re.compile(r'''__version__ = ['"]([0-9.]+)['"]''')
 
 requires = [
     'django>=1.8.0,<1.10.0',
-    'boto3>=1.4.0'
+    'boto3>=1.3.0'
 ]
 
 
 def get_version():
-    init = open(os.path.join(ROOT, '', '__init__.py')).read()
+    init = open(os.path.join(ROOT, 'cw_logging', '__init__.py')).read()
     return VERSION_RE.search(init).group(1)
 
 
@@ -31,8 +31,7 @@ setup(
     url='https://github.com/hrishabhg/cloudwatch_logging',
     scripts=[],
     packages=find_packages(exclude=['tests*']),
-    package_data={
-    },
+    package_data={},
     include_package_data=True,
     install_requires=requires,
     license="",
